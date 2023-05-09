@@ -1,0 +1,10 @@
+@import './src/index.scss';
+
+button {
+    width: 30px;
+    height: 30px;
+
+    .hola{
+        background-color: red;
+    }
+}
