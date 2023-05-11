@@ -1,8 +1,8 @@
 import './iconButton.scss'
 
-const iconButton = ({background}) => {
+const iconButton = ({background, icon}) => {
     return (
-        <button className={background}>Hola</button>
+        <button className={background}><img src={icon}/></button>
     )
 }
 

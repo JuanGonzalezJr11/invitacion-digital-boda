@@ -1,14 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/navbar/navbar.jsx'
+import Navbar from './components/navbar/navbar.jsx';
+import Countdown from './components/countdown/countdown';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <h1>
-        Hola a todos ¿Cómo están?
-      </h1>
+      <Countdown />
     </div>
   );
 }

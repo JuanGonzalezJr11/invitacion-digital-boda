@@ -1,6 +1,5 @@
 import './navbar.scss';
-// import iconButtonMenu from './src/assets/icons/menu_black_24dp.svg';
-import IconButtonMenu from '../../assets/icons/menu_black_24dp.svg';
+import IconButtonMenu from '../../assets/icons/IconButtonMenu.svg';
 import IconButton from '../iconButton/iconButton.jsx';
 
 const navbar = () => {
@@ -10,8 +9,7 @@ const navbar = () => {
                 <h1><span>Iara</span> & Juan</h1>
             </div>
             <div>
-                <IconButton background='hola'/>
-
+                <IconButton background='iconButton-normal' icon={IconButtonMenu}/>
             </div>
         </nav>
     )
