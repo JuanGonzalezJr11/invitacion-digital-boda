@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+.img-photo {
+    @include img-photo;
+    display: block;
+}
+
+p {
+    margin: 12px;
+}

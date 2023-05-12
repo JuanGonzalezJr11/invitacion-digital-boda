@@ -1,0 +1,12 @@
+@import '../../index.scss';
+
+.footer-div-container {
+    margin: 0px;
+    text-align: center;
+
+    p{
+        color: $secondary-color;
+        @include p-12;
+        margin: 0px;
+    }
+}
