@@ -1,0 +1,20 @@
+@import '../../index.scss';
+
+.attendance-div {
+    text-align: center;
+
+    .photo {
+        width: 360px;
+        height: 355px;
+        @include margin-photo;
+    }
+
+    h1 {
+        margin-bottom: 12px;
+    }
+
+    p {
+        @include p-24;
+        margin-bottom: 12px;
+    }
+}

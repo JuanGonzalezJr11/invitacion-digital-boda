@@ -1,5 +1,5 @@
 import './navbar.scss';
-import IconButtonMenu from '../../assets/icons/IconButtonMenu.svg';
+import IconButtonMenu from '../../assets/icons/iconButtonMenu.svg';
 import IconButton from '../iconButton/iconButton.jsx';
 
 const navbar = () => {

@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+.dateTimePlace-div {
+    text-align: center;
+    margin-bottom: 48px;
+
+    .photo {
+        width: 360px;
+        height: 420px;
+        @include margin-photo;
+    }
+
+    p {
+        @include p-24;
+        margin: 0px 0px 8px 0px;
+    }
+
+    h1 {
+        margin-bottom: 12px;
+    }
+
+    div {
+        margin-bottom: 48px;
+    }
+
+    .intern-div {
+        margin-bottom: 24px;
+    }
+
+    .icon {
+        @include margin-icon;
+    }
+
+    .iframe {
+        width: 360px;
+        height: 360px;
+        margin: 0px -20px;
+
+        iframe {
+            border: 0px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../index.scss';
+
+.dressCode-div {
+    text-align: center;
+    margin-bottom: 48px;
+
+    .photo{
+        width: 360px;
+        height: 380px;
+        @include margin-photo;
+    }
+
+    .dressBoyGirl-div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+    }
+
+    p {
+        @include p-24;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    h1 {
+        margin-bottom: 12px;
+    }
+}

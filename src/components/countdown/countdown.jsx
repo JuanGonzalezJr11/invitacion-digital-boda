@@ -20,7 +20,7 @@ const countdown = () => {
                 <p>segundos</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default countdown;
