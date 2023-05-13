@@ -1,0 +1,129 @@
+@import '../../index.scss';
+
+button {
+    @include font-family;
+    @include p-24;
+}
+
+.button-primary-m {
+    width: 148px;
+    height: 50px;
+    background-color: $secondary-color-tone-5;
+    color: $neutral-white;
+    border: 0px;
+    
+    &:hover {
+        @include primary-state-hover;
+    }
+
+    &:active {
+        @include primary-state-active;
+    }
+
+    &:disabled {
+        @include state-disabled;
+    }
+}
+
+.button-primary-l {
+    width: 189px;
+    height: 50px;
+    background-color: $secondary-color-tone-5;
+    color: $neutral-white;
+    border: 0px;
+    
+    &:hover {
+        @include primary-state-hover;
+    }
+
+    &:active {
+        @include primary-state-active;
+    }
+
+    &:disabled {
+        @include state-disabled;
+    }
+}
+
+.button-primary-xl {
+    width: 320px;
+    height: 50px;
+    background-color: $secondary-color-tone-5;
+    color: $neutral-white;
+    border: 0px;
+    
+    &:hover {
+        @include primary-state-hover;
+    }
+
+    &:active {
+        @include primary-state-active;
+    }
+
+    &:disabled {
+        @include state-disabled;
+    }
+}
+
+.button-secondary-m {
+    width: 148px;
+    height: 50px;
+    color: $secondary-color-tone-5;
+    border: 1px solid $secondary-color-tone-5;
+    
+    &:hover {
+        @include secondary-state-hover;
+    }
+
+    &:active {
+        @include secondary-state-active;
+    }
+
+    &:disabled {
+        @include state-disabled;
+    }
+}
+
+.button-secondary-l {
+    width: 189px;
+    height: 50px;
+    color: $secondary-color-tone-5;
+    border: 1px solid $secondary-color-tone-5;
+    
+    &:hover {
+        @include secondary-state-hover;
+    }
+
+    &:active {
+        @include secondary-state-active;
+    }
+
+    &:disabled {
+        @include state-disabled;
+    }
+}
+
+.button-secondary-xl {
+    width: 320px;
+    height: 50px;
+    color: $secondary-color-tone-5;
+    border: 1px solid $secondary-color-tone-5;
+    
+    &:hover {
+        @include secondary-state-hover;
+    }
+
+    &:active {
+        @include secondary-state-active;
+    }
+
+    &:disabled {
+        @include state-disabled;
+    }
+}
+
+
+
+    
+
+    

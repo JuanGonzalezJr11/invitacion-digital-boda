@@ -1,12 +1,12 @@
 @import '../../index.scss';
 
-.attendance-div {
+.gift-div {
     text-align: center;
     margin-bottom: 48px;
 
     .photo {
         width: 360px;
-        height: 355px;
+        height: 330px;
         @include margin-photo;
     }
 

@@ -4,7 +4,10 @@ import Countdown from './components/countdown/countdown.jsx';
 import Home from './components/home/home.jsx';
 import DateTimePlace from './components/dateTimePlace/dateTimePlace.jsx';
 import DressCode from './components/dressCode/dressCode.jsx';
-import Attendance from './components/attendance/attendance';
+import Attendance from './components/attendance/attendance.jsx';
+import Gift from './components/gift/gift.jsx';
+import Playlist from './components/playlist/playlist.jsx';
+import End from './components/end/end.jsx';
 import Footer from './components/footer/footer.jsx';
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
       <DateTimePlace />
       <DressCode />
       <Attendance />
+      <Gift />
+      <Playlist />
+      <End />
       <Footer />
     </div>
   );

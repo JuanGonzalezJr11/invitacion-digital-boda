@@ -1,14 +1,8 @@
 @import '../../index.scss';
 
-.attendance-div {
+.playlist-div {
     text-align: center;
     margin-bottom: 48px;
-
-    .photo {
-        width: 360px;
-        height: 355px;
-        @include margin-photo;
-    }
 
     h1 {
         margin-bottom: 12px;
