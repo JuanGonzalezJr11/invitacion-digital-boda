@@ -1,27 +1,29 @@
 @import '../../index.scss';
 
-.home-div {
-    margin-top: 24px;
-    margin-bottom: 48px;
-    text-align: center;
-
-    .photo {
-        width: 360px;
-        height: 320px;
-        @include margin-photo;
-    }
-
+.div-body {
+    background-color: $primary-color;
+    padding: 0px 20px;
+    margin: 0px;
+    @include font-family;
+    color: $secondary-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
     h1 {
-        margin-bottom: 24px;
+      font-size: 36px;
+      margin: 0px;
     }
-
+    
+    h2 {
+      font-size: 32px;
+      margin: 0px;
+    }
+  
     p {
-        @include p-24;
+      margin: 0px;
     }
-
+  
     .icon {
-        @include margin-icon;
+      @include margin-icon;
     }
-}
-
-
+  }
