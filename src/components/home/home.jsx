@@ -12,7 +12,7 @@ import Footer from '../footer/footer.jsx';
 
 const home = () => {
     return (
-        <div className='div-body'>
+        <div className='div-home'>
             <Navbar />
             <Countdown />
             <Start />

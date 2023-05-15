@@ -3,20 +3,17 @@ html {
     min-height: 100%;
 }
 
-body {
+.div-presentation {
     color: $neutral-white;
     text-align: center;
     padding: 0px;
     background-image: url('../../assets/images/img-presentation-edit.jpg');
     background-attachment: fixed;
     background-size: cover;
-
-    .div-prueba {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 100vh;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 
     .gradient-top {
         width: 100%;
@@ -47,7 +44,7 @@ body {
         justify-content: center;
 
         img {
-            margin-top: 30%;
+            margin-top: 80%;
             height: 90px;
             animation-name: arrowMoviment;
             animation-duration: 1s;
@@ -61,3 +58,63 @@ body {
         }
     }
 }
+
+
+// body {
+//     color: $neutral-white;
+//     text-align: center;
+//     padding: 0px;
+//     background-image: url('../../assets/images/img-presentation-edit.jpg');
+//     background-attachment: fixed;
+//     background-size: cover;
+
+//     .div-prueba {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         min-height: 100vh;
+//     }
+
+//     .gradient-top {
+//         width: 100%;
+//         height: 20vh;
+//         background: linear-gradient(rgb(10, 10, 10), transparent);
+
+//         h1 {
+//             padding: 24px;
+//             font-weight: normal;
+//         }
+//     }
+
+//     @keyframes arrowMoviment {
+//         0% {
+//             transform: translateY(0px);
+//         }
+
+//         100%{
+//             transform: translateY(15px);
+//         }
+//     }
+
+//     .gradient-bottom {
+//         height: 30vh;
+//         background: linear-gradient(to top, rgb(10, 10, 10) 5%, transparent);
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+
+//         img {
+//             margin-top: 30%;
+//             height: 90px;
+//             animation-name: arrowMoviment;
+//             animation-duration: 1s;
+//             animation-iteration-count: infinite;
+//             animation-direction: alternate;
+//         }
+
+//         button {
+//             margin: 0px;
+//             padding: 0px;
+//         }
+//     }
+// }

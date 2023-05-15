@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const presentation = () => {
     return (
-        <div className='div-prueba'>
+        <div className='div-presentation'>
             <div className='gradient-top'>
                 <h1>Iara & Juan</h1>
             </div>
