@@ -1,8 +1,8 @@
 @import './src/index.scss';
 
-nav{
+header {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
     margin: 0px -20px;
     height: 92px;
@@ -12,16 +12,38 @@ nav{
     top: 0;
     width: 100%;
     background-color: $primary-color;
+    
 
-    div{
-        padding: 20px;
+    div {
+        margin: 20px;
     }
 
-    span{
+    span {
         display: block;
     }
 
-    h1{
-        margin: 0px;
+    nav {
+        margin-top: -42px;
+        width: 100%;
+        display: none;
+        justify-content: end;
+        margin-right: 20px;
+
+        ul {
+            background-color: $neutral-white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            padding: 10px;
+            border: solid 1px;
+            text-align: center;
+            list-style: none;
+        }
+    }
+
+    .isActive {
+        display: flex;
     }
 }
