@@ -4,10 +4,13 @@ import IconButtonMenuActive from '../../assets/icons/iconButtonMenuActive.svg';
 import IconButton from '../iconButton/iconButton.jsx';
 import { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({action}) => {
     const [menu, setMenu] = useState(false);
+    const [icon,setIcon] = useState(true);
+    
     const viewMenu = () => {
         setMenu(!menu);
+        setIcon(!icon);
     };
 
     return (
@@ -16,17 +19,18 @@ const Navbar = () => {
                 <h1><span>Iara</span> & Juan</h1>
             </div>
             <div>
-                <IconButton background='iconButton-normal' action={viewMenu} icon={IconButtonMenu}/>
+                <IconButton background='iconButton-normal' action={viewMenu} icon={icon === true ? IconButtonMenu : IconButtonMenuActive }/>
             </div>
             <nav className={`${menu ? 'isActive' : ''}`}>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Fecha, hora y lugar</li>
-                    <li>Dress code</li>
-                    <li>Asistencia</li>
-                    <li>Regalos</li>
-                    <li>Playlist</li>
-                    <li>Login</li>
+                    <li><button onClick={(e) => action(0)}>Inicio</button></li>
+                    <li><button onClick={(e) => action(1)}>Fecha y hora</button></li>
+                    <li><button onClick={(e) => action(2)}>Lugar</button></li>
+                    <li><button onClick={(e) => action(3)}>Dress code</button></li>
+                    <li><button onClick={(e) => action(4)}>Asistencia</button></li>
+                    <li><button onClick={(e) => action(5)}>Regalos</button></li>
+                    <li><button onClick={(e) => action(6)}>Playlist</button></li>
+                    <li className='li-end'><button>Login</button></li>
                 </ul>
             </nav>
         </header>

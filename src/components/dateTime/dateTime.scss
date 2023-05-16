@@ -23,21 +23,7 @@
         margin-bottom: 48px;
     }
 
-    .intern-div {
-        margin-bottom: 24px;
-    }
-
     .icon {
         @include margin-icon;
-    }
-
-    .iframe {
-        width: 360px;
-        height: 360px;
-        margin: 0px -20px;
-
-        iframe {
-            border: 0px;
-        }
     }
 }

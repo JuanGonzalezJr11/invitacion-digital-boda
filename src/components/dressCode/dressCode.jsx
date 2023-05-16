@@ -15,7 +15,7 @@ const dressCode = () => {
                     <img src={IconBoy} alt='icon boy'/>
                     <p>Vestimenta formal. No utilizar color azul noche en ninguna de sus prendas.</p>
                 </div>
-                <div className='dressBoyGirl-div'>
+                <div className='dressBoyGirl-div girl-div'>
                     <img src={IconGirl} alt='icon girl'/>
                     <p>Vestimenta formal. No utilizar color blanco en prendas de torso.</p>
                 </div>
