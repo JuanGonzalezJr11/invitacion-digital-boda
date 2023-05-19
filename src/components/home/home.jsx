@@ -10,19 +10,23 @@ import Gift from '../gift/gift.jsx';
 import Playlist from '../playlist/playlist.jsx';
 import End from '../end/end.jsx';
 import Footer from '../footer/footer.jsx';
-import {useRef} from 'react';
+import {useContext, useRef} from 'react';
+import { ContextUI } from '../context/context';
 
 const Home = () => {
-    const myRef = useRef([]);
-    const handleClick = (index) => {
-        myRef.current[index].scrollIntoView({behavior: 'smooth', block: 'center'});
-    };
+    // const myRef = useRef([]);
+
+    const {myRef} = useContext(ContextUI);
+    
+    // const handleClick = (index) => {
+    //     myRef.current[index].scrollIntoView({behavior: 'smooth', block: 'center'});
+    // };
 
     const targetDate = new Date('2024-02-18T21:00:00')
 
     return (
         <div className='div-home'>
-            <Navbar action={handleClick}/>
+            {/* <Navbar action={handleClick}/> */}
             <div ref={(el) => (myRef.current[0] = el)}>
                 <Countdown targetDate={targetDate}/>
             </div>

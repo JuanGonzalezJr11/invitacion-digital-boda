@@ -10,7 +10,7 @@ const presentation = () => {
                 <h1>Iara & Juan</h1>
             </div>
             <div className='gradient-bottom'>
-                <Link to='/home'><img src={IconPresentation} alt='down'/></Link>
+                <Link to='/Home'><img src={IconPresentation} alt='down'/></Link>
             </div>
         </div>
     );
