@@ -1,0 +1,78 @@
+@import '../../index.scss';
+
+.input-div {
+    @mixin input {
+        height: 40px;
+        background-color: $neutral-white;
+        color: $neutral-grey-tone-5;
+        border: 1px solid $neutral-white;
+        @include p-24;
+        @include font-family;
+        text-align: center;
+    }
+    
+    @mixin input-hover {
+      border: 1px solid $neutral-grey-tone-1;
+    }
+    
+    @mixin input-pressed {
+        border: 1px solid $neutral-grey-tone-5;
+    }
+    
+    @mixin input-disabled {
+        background-color: $neutral-grey-tone-1;
+        color: $neutral-grey-tone-5;
+    }
+    
+    .input-m {
+        @include input;
+        width: 148px;
+    
+        &:hover {
+            @include input-hover;
+        }
+    
+        &:active {
+            @include input-pressed;
+        }
+    
+        &:disabled {
+            @include input-disabled;
+        }
+    }
+    
+    .input-l {
+        @include input;
+        width: 190px;
+    
+        &:hover {
+            @include input-hover;
+        }
+    
+        &:active {
+            @include input-pressed;
+        }
+    
+        &:disabled {
+            @include input-disabled;
+        }
+    }
+    
+    .input-xl {
+        @include input;
+        width: 320px;
+    
+        &:hover {
+            @include input-hover;
+        }
+    
+        &:active {
+            @include input-pressed;
+        }
+    
+        &:disabled {
+            @include input-disabled;
+        }
+    }
+}
+

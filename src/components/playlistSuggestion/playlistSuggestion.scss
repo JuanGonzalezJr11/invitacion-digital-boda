@@ -1,0 +1,35 @@
+@import '../../index.scss';
+
+.playlistSuggestion-div {
+    margin-top: 138px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include grid;
+
+    h1 {
+        margin-bottom: 12px;
+    }
+
+    p {
+        @include p-24;
+    }
+
+    // input {
+    //     margin-bottom: 20px;
+    // }
+
+    button {
+        margin-bottom: 24px;
+    }
+
+    .div-form {
+        margin-bottom: 24px;
+    }
+
+    .input-group {
+        margin-bottom: 24px;
+    }
+}

@@ -7,6 +7,7 @@ import Navbar from './components/navbar/navbar';
 import { useContext } from 'react';
 import GiftList from './components/giftList/giftList';
 import Footer from './components/footer/footer.jsx';
+import PlaylistSuggestion from './components/playlistSuggestion/playlistSuggestion.jsx';
 
 function App() {
   const {handleClick} = useContext(ContextUI);
@@ -18,6 +19,7 @@ function App() {
             <Route path='/' element={<Presentation />} />
             <Route path='/Home' element={<Home />} />
             <Route path='/GiftList' element={<GiftList />} />
+            <Route path='/PlaylistSuggestion' element={<PlaylistSuggestion />} />
           </Routes>
         <Footer />
     </div>

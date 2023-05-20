@@ -54,7 +54,6 @@ $shade-color: rgb(0, 0, 0, 0.25);
 // Buttons
 @mixin primary-state-hover {
   background-color: $secondary-color;
-  // border: 1px solid $neutral-grey-tone-1;
 }
 @mixin primary-state-active {
   background-color: $secondary-color-tone-6;
