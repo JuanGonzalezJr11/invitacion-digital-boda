@@ -1,1 +1,25 @@
 @import '../../index.scss';
+
+.giftList-div {
+    margin-top: 138px;
+    text-align: center;
+    @include grid;
+
+    p {
+        @include p-24;
+        margin-bottom: 12px;
+
+        &.p-cbu {
+            font-weight: bold;
+            margin-bottom: 48px;
+        }
+    }
+
+    h1 {
+        margin-bottom: 12px;
+    }
+
+    button {
+        margin-bottom: 48px;
+    }
+}

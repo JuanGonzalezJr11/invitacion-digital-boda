@@ -54,7 +54,6 @@ const Home = () => {
             <div ref={(el) => (myRef.current[7] = el)}>
                 <End />
             </div>
-            <Footer />
         </div>
     );
 };
