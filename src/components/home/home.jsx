@@ -1,5 +1,4 @@
 import './home.scss';
-import Navbar from '../navbar/navbar.jsx';
 import Countdown from '../countdown/countdown.jsx'
 import Start from '../start/start.jsx';
 import DateTimePlace from '../dateTime/dateTime.jsx';
@@ -9,18 +8,11 @@ import Attendance from '../attendance/attendance.jsx';
 import Gift from '../gift/gift.jsx';
 import Playlist from '../playlist/playlist.jsx';
 import End from '../end/end.jsx';
-import Footer from '../footer/footer.jsx';
 import {useContext, useRef} from 'react';
 import { ContextUI } from '../context/context';
 
 const Home = () => {
-    // const myRef = useRef([]);
-
     const {myRef} = useContext(ContextUI);
-    
-    // const handleClick = (index) => {
-    //     myRef.current[index].scrollIntoView({behavior: 'smooth', block: 'center'});
-    // };
 
     const targetDate = new Date('2024-02-18T21:00:00')
 

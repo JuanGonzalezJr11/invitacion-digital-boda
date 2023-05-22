@@ -2,7 +2,7 @@ import './start.scss';
 import IconRing from '../../assets/icons/iconRing.svg';
 import ImageHome from '../../assets/images/img-home-edit.jpg';
 
-const home = () => {
+const start = () => {
     return (
         <div className='home-div'>
             <div>
@@ -15,4 +15,4 @@ const home = () => {
     );
 };
 
-export default home;
+export default start;

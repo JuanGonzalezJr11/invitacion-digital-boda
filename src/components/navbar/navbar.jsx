@@ -7,7 +7,7 @@ import { useLocation, useNavigate} from 'react-router-dom';
 
 const Navbar = ({action}) => {
     const [menu, setMenu] = useState(false);
-    const [icon,setIcon] = useState(true);
+    const [icon, setIcon] = useState(true);
     const location = useLocation();
     const navigate = useNavigate();
     const viewMenu = () => {

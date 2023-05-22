@@ -3,6 +3,7 @@
 button {
     @include font-family;
     @include p-24;
+    cursor: pointer;
 }
 
 .button-primary-m {

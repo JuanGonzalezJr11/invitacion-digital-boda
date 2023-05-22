@@ -6,6 +6,7 @@
 
     table {
         width: 100%;
+        max-width: 600px;
         margin-bottom: 24px;
 
         th {
@@ -42,6 +43,23 @@
                     &.p-link {
                         text-decoration: underline;
                         color: $secondary-color;
+                        cursor: pointer;
+                    }
+
+                    &.reserved {
+                        text-decoration: line-through;
+                    }
+                }
+            }
+
+            &.pressed {
+                background-color: $secondary-color-tone-6;
+                color: $neutral-white;
+                border-color: $secondary-color;
+
+                div {
+                    p {
+                        color: $neutral-white;
                     }
                 }
             }
