@@ -4,6 +4,10 @@ import ImageAttendance from '../../assets/images/img-attendance-edit.jpg';
 import Button from '../button/button.jsx';
 
 const attendance = () => {
+    const goToForm = () => {
+        window.open('https://forms.gle/3N6t4Qyvs5wpJnTQ6');
+    }
+
     return (
         <div className='attendance-div'>
             <img className='photo' src={ImageAttendance} alt='image attendance' />
@@ -12,7 +16,7 @@ const attendance = () => {
                 <h1>Asistencia</h1>
                 <p>Esperamos que formes parte de este lindo recuerdo.</p>
             </div>
-            <Button type='button-primary-xl' text='Confirmar asistencia'/>
+            <Button type='button-primary-xl' text='Confirmar asistencia' onClick={goToForm}/>
         </div>
     );
 };

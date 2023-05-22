@@ -11,7 +11,7 @@ const GiftList = () => {
     const {savePath, gift} = useContext(ContextUI);
     const location = useLocation();
     
-    const redirectionWhatSapp = () => {
+    const redirectionWhatsApp = () => {
         const message = encodeURIComponent(`Hola, te voy a reservar ${gift}.`);
         window.open(`https://wa.me/3512006119?text=${message}`);
     } 
@@ -39,9 +39,13 @@ const GiftList = () => {
             <h1>Regalos</h1>
             <p>Acá tenemos una lista específica de las cosas que necesitamos y nos gustarían como regalo.</p>
             <Table listContainer={giftAdapter}/>
-            <Button type='button-primary-l' text='Reservar regalo' onClick={redirectionWhatSapp} />
-            <p>También podes aportar para nuestra luna de miel transfiriendo al siguiente CBU:</p>
-            <p className='p-cbu'>juangonzalezjr11.mp</p>
+            <Button type='button-primary-l' text='Reservar regalo' onClick={redirectionWhatsApp} />
+            <p>También podes aportar para nuestra luna de miel transfiriendo a la siguiente cuenta:</p>
+            <p>Alias:</p>
+            <p className='p-cbu'>iara.vila.bru</p>
+            <p>CBU:</p>
+            <p className='p-cbu'>1430001713019384870015</p>
+            <p className='p-cbu-end'>Iara Belen Vilaboa Silveira</p>
             <Link to='/Home'><Button type='button-secondary-m' text='Volver'/></Link>
         </div>
     );
