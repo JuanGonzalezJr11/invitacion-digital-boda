@@ -1,5 +1,5 @@
-import { ContextUI } from '../context/context';
 import './table.scss';
+import { ContextUI } from '../context/context';
 import React, { useContext, useEffect } from 'react';
 
 const Table = ({listContainer}) => {
@@ -11,7 +11,6 @@ const Table = ({listContainer}) => {
 
     const onClickReserva = (gift,available) => {
         if(available){
-
             saveGift(gift);
         }
     };

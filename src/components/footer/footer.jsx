@@ -1,11 +1,11 @@
 import './footer.scss';
 
-const footer = () => {
+const Footer = ({style}) => {
     return (
-        <div className='footer-div-container'>
+        <div className={`${style} footer-div-container`}>
             <p>Product by Juan Gonzalez | 2023</p>
         </div>
     );
 };
 
-export default footer;
+export default Footer;

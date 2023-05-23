@@ -5,7 +5,7 @@ import IconButton from '../iconButton/iconButton.jsx';
 import { useState } from 'react';
 import { useLocation, useNavigate} from 'react-router-dom';
 
-const Navbar = ({action}) => {
+const Navbar = ({action, style}) => {
     const [menu, setMenu] = useState(false);
     const [icon, setIcon] = useState(true);
     const location = useLocation();
@@ -16,12 +16,11 @@ const Navbar = ({action}) => {
     };
 
     const goBack = (index) => {
-        // Se puede hacer un array de las rutas
         if(location.pathname === '/GiftList'){
             navigate('/Home');
             setTimeout(() => {
                 action(index);
-            }, 1);
+            }, 1750);
         }else{
             action(index);
         }
@@ -29,7 +28,7 @@ const Navbar = ({action}) => {
     }
 
     return (
-        <header>
+        <header className={style}>
             <div>
                 <h1><span>Iara</span> & Juan</h1>
             </div>
