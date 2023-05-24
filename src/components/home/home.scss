@@ -8,7 +8,6 @@
     color: $secondary-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  
     h1 {
       font-size: 36px;
       margin: 0px;
@@ -25,5 +24,10 @@
   
     .icon {
       @include margin-icon;
+    }
+
+    .div-countdown {
+      display: flex;
+      justify-content: center;
     }
   }

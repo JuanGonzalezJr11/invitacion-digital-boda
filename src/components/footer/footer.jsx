@@ -2,7 +2,7 @@ import './footer.scss';
 
 const Footer = ({style}) => {
     return (
-        <div className={`${style} footer-div-container`}>
+        <div className={`footer-div-container ${style}`}>
             <p>Product by Juan Gonzalez | 2023</p>
         </div>
     );

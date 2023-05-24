@@ -4,12 +4,14 @@ import IconButtonMenuActive from '../../assets/icons/iconButtonMenuActive.svg';
 import IconButton from '../iconButton/iconButton.jsx';
 import { useState } from 'react';
 import { useLocation, useNavigate} from 'react-router-dom';
+import PageTransition from '../pageTransition/pageTransition.jsx';
 
 const Navbar = ({action, style}) => {
     const [menu, setMenu] = useState(false);
     const [icon, setIcon] = useState(true);
     const location = useLocation();
     const navigate = useNavigate();
+
     const viewMenu = () => {
         setMenu(!menu);
         setIcon(!icon);
@@ -43,12 +45,12 @@ const Navbar = ({action, style}) => {
                     <li><button onClick={(e) => goBack(3)}>Dress code</button></li>
                     <li><button onClick={(e) => goBack(4)}>Asistencia</button></li>
                     <li><button onClick={(e) => goBack(5)}>Regalos</button></li>
-                    <li><button onClick={(e) => goBack(6)}>Playlist</button></li>
-                    <li className='li-end'><button>Login</button></li>
+                    <li className='li-end'><button onClick={(e) => goBack(6)}>Playlist</button></li>
+                    {/* <li className='li-end'><button>Login</button></li> */}
                 </ul>
             </nav>
         </header>
-    )
+    );
 };
 
 export default Navbar;

@@ -5,7 +5,7 @@ import Button from '../button/button.jsx';
 
 const attendance = () => {
     const goToForm = () => {
-        window.open('https://forms.gle/3N6t4Qyvs5wpJnTQ6');
+        window.open('https://forms.gle/2KHhgC4Wcpwxbxug6');
     }
 
     return (

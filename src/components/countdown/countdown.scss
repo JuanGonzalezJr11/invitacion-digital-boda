@@ -3,12 +3,13 @@
 .div-container {
     margin: 138px 0px 24px 0px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     border: solid 1px $secondary-color;
     border-left: none;
     border-right: none;
     padding: 10px 0px;
+    width: 100%;
+    max-width: 80vh;
 
     div {
         text-align: center;

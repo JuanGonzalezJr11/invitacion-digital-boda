@@ -5,12 +5,15 @@ import { Link } from 'react-router-dom';
 
 
 const playlist = () => {
+    const goToForm = () => {
+        window.open('https://forms.gle/kHoTuptErrAp2VTd8');
+    }
     return (
         <div className='playlist-div'>
             <img className='icon' src={IconPlaylist} alt='icon playlist'/>
             <h1>Playlist</h1>
             <p>¿Te gustaría sugerir algún tema?</p>
-            <Link to='/PlaylistSuggestion'><Button type='button-primary-l' text='Sugerir canción' /></Link>
+            <Button type='button-primary-l' text='Sugerir canción' onClick={goToForm}/>
         </div>
     );
 };

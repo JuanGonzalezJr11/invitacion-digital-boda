@@ -7,13 +7,14 @@ import Button from '../button/button.jsx';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../service/firebase';
 import PageTransition from '../pageTransition/pageTransition.jsx';
+import Footer from '../footer/footer.jsx';
 
 const GiftList = () => {
     const {savePath, gift} = useContext(ContextUI);
     const location = useLocation();
     
     const redirectionWhatsApp = () => {
-        const message = encodeURIComponent(`Hola, te voy a reservar ${gift}.`);
+        const message = encodeURIComponent(`Hola Juan y Iara, queremos reservales el siguiente regalo: ${gift}.`);
         window.open(`https://wa.me/3512006119?text=${message}`);
     } 
 
@@ -33,7 +34,6 @@ const GiftList = () => {
             setGiftAdapter(giftAdapter);
         });
     }, []);
-    
 
     return (
         <PageTransition>
@@ -50,6 +50,7 @@ const GiftList = () => {
                 <p className='p-cbu-end'>Iara Belen Vilaboa Silveira</p>
                 <Link to='/Home'><Button type='button-secondary-m' text='Volver'/></Link>
             </div>
+            <Footer />
         </PageTransition>
     );
 };

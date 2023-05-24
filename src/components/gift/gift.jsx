@@ -4,9 +4,7 @@ import IconGift from '../../assets/icons/iconGift.svg';
 import Button from '../button/button.jsx';
 import { Link} from 'react-router-dom';
 
-
 const Gift = () => {
-
     return (
         <div className='gift-div'>
             <img className='photo' src={ImageGift} alt='image gift'/>

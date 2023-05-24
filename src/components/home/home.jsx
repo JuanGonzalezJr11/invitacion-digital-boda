@@ -11,16 +11,16 @@ import End from '../end/end.jsx';
 import { useContext } from 'react';
 import { ContextUI } from '../context/context';
 import PageTransition from '../pageTransition/pageTransition.jsx';
+import Footer from '../footer/footer';
 
 const Home = () => {
     const {myRef} = useContext(ContextUI);
-
     const targetDate = new Date('2024-02-18T21:00:00');
 
     return (
         <PageTransition>
             <div className='div-home'>
-                <div ref={(el) => (myRef.current[0] = el)}>
+                <div ref={(el) => (myRef.current[0] = el)} className='div-countdown'>
                     <Countdown targetDate={targetDate}/>
                 </div>
                 <div>
@@ -48,6 +48,7 @@ const Home = () => {
                     <End />
                 </div>
             </div>
+            <Footer />
         </PageTransition>
     );
 };

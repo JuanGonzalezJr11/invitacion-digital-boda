@@ -6,7 +6,7 @@ import PageTransition from '../pageTransition/pageTransition.jsx';
 
 const Presentation = () => {
     return (
-        <PageTransition type='presentation'>
+        <PageTransition>
             <div className='div-presentation'>
                 <div className='gradient-top'>
                     <h1>Iara & Juan</h1>

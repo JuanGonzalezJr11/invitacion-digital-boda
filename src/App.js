@@ -15,12 +15,12 @@ function App() {
   return (
     <div>
       <Navbar action={handleClick} style={locationPath.pathname === '/' ? 'display-none' : ''} />
-      <Routes>
-        <Route path='/' element={<Presentation />} />
-        <Route path='/Home' element={<Home />} />
-        <Route path='/GiftList' element={<GiftList />} />
-      </Routes>
-      <Footer style={locationPath.pathname === '/' ? 'display-none' : ''} />
+        <Routes>
+          <Route path='/' element={<Presentation />} />
+          <Route path='/Home' element={<Home />} />
+          <Route path='/GiftList' element={<GiftList />} />
+        </Routes>
+      {/* <Footer style={locationPath.pathname === '/' ? 'display-none' : ''} /> */}
     </div>
   );
 };
