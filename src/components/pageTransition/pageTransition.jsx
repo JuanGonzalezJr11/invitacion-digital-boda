@@ -13,8 +13,9 @@ const PageTransition = ({children, type}) => {
         </div>
         :
         <div>
+            {/* style={{position: 'absolute', width: '100%', height: '100%'}} */}
             <AnimatePresence>
-                <motion.div initial={{opacity: 0, y: '-100vh'}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: '-100vh'}} transition={{duration: 1.75}} style={{position: 'absolute', width: '100%', height: '100%'}}>
+                <motion.div initial={{opacity: 0, y: '-100vh'}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: '-100vh'}} transition={{duration: 1.75}} style={{position: 'absolute'}}>
                     {children}
                 </motion.div>
             </AnimatePresence>

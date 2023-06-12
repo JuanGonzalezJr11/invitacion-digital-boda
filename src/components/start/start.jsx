@@ -4,7 +4,7 @@ import ImageHome from '../../assets/images/img-home-edit.jpg';
 
 const start = () => {
     return (
-        <div className='home-div'>
+        <div className='start-div'>
             <div>
                 <img className='icon' src={IconRing} alt='icon ring'/>
                 <h1>¡Nuestra boda!</h1>

@@ -5,9 +5,21 @@
     margin-bottom: 48px;
 
     .photo {
-        width: 360px;
-        height: 355px;
+        // width: 360px;
+        // height: 355px;
+        width: 110%;
+        height: auto;
         @include margin-photo;
+
+        @media (min-width: 768px) {
+            width: 540px;
+            height: 532.5px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 720px;
+            height: 710px;
+        }
     }
 
     h1 {

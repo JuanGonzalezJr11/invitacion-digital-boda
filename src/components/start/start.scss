@@ -1,14 +1,26 @@
 @import '../../index.scss';
 
-.home-div {
+.start-div {
     margin-top: 24px;
     margin-bottom: 48px;
     text-align: center;
 
     .photo {
-        width: 360px;
-        height: 320px;
+        // width: 360px;
+        // height: 320px;
+        width: 110%;
+        height: auto;
         @include margin-photo;
+
+        @media (min-width: 768px) {
+            width: 540px;
+            height: 480px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 720px;
+            height: 640px;
+        }
     }
 
     h1 {
