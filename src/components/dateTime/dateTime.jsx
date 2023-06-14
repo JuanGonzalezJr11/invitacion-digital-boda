@@ -9,8 +9,8 @@ const dateTime = () => {
             <div>
                 <img className='icon' src={IconCalendar} alt='icon calendar'/>
                 <h1>Fecha y hora</h1>
-                <p>18 de Febrero, 2024.</p>
-                <p>De 20pm. a 4am.</p>
+                <p>17 de Febrero, 2024.</p>
+                <p>De 21:30pm. a 5am.</p>
             </div>
         </div>
     );
