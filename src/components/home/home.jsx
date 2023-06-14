@@ -15,7 +15,7 @@ import Footer from '../footer/footer';
 
 const Home = () => {
     const {myRef} = useContext(ContextUI);
-    const targetDate = new Date('2024-02-18T21:00:00');
+    const targetDate = new Date('2024-02-17T21:30:00');
 
     return (
         <PageTransition>

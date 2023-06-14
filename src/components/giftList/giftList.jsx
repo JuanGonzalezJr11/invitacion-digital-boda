@@ -39,7 +39,7 @@ const GiftList = () => {
         <PageTransition>
             <div className='giftList-div'>
                 <h1>Regalos</h1>
-                <p>Acá tenemos una lista específica de las cosas que necesitamos y nos gustarían como regalo.</p>
+                <p>Acá tenemos una lista de las cosas que necesitamos y nos gustarían como regalo.</p>
                 <Table listContainer={giftAdapter}/>
                 <Button type='button-primary-l' text='Reservar regalo' onClick={redirectionWhatsApp} />
                 <p>También podes aportar para nuestra luna de miel transfiriendo a la siguiente cuenta:</p>
