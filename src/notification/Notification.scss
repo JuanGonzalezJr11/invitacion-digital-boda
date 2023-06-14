@@ -1,0 +1,36 @@
+@import '../index.scss';
+
+.div-Notification {
+    @keyframes createTransparent {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    position: fixed;
+    z-index: 1;
+    top: 120px;
+    right: 15px;
+    padding: 20px 10px;
+    color: $neutral-white;
+    @include p-20;
+    animation-name: createTransparent;
+    animation-duration: 5.1s;
+
+    &.success {
+        background-color: $status-green;
+    }
+
+    &.error {
+        background-color: $secondary-color;
+    }
+
+    
+}
+

@@ -8,12 +8,17 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../service/firebase';
 import PageTransition from '../pageTransition/pageTransition.jsx';
 import Footer from '../footer/footer.jsx';
+import { NotificationContext } from '../../notification/Notification';
 
 const GiftList = () => {
     const {savePath, gift} = useContext(ContextUI);
     const location = useLocation();
+    const {setNotification} = useContext(NotificationContext);
     
     const redirectionWhatsApp = () => {
+        if(gift.length === 0) {
+            return setNotification('error', 'Debe seleccionar un regalo del listado.');
+        }
         const message = encodeURIComponent(`Hola Juan y Iara, queremos reservales el siguiente regalo: ${gift}.`);
         window.open(`https://wa.me/3512006119?text=${message}`);
     } 
