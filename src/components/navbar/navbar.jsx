@@ -4,7 +4,6 @@ import IconButtonMenuActive from '../../assets/icons/iconButtonMenuActive.svg';
 import IconButton from '../iconButton/iconButton.jsx';
 import { useState } from 'react';
 import { useLocation, useNavigate} from 'react-router-dom';
-import PageTransition from '../pageTransition/pageTransition.jsx';
 
 const Navbar = ({action, style}) => {
     const [menu, setMenu] = useState(false);
