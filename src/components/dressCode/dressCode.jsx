@@ -17,7 +17,7 @@ const dressCode = () => {
                 </div>
                 <div className='dressBoyGirl-div girl-div'>
                     <img src={IconGirl} alt='icon girl'/>
-                    <p>Vestimenta formal. No utilizar tonos azules o celestes, ni blanco en prendas de torso.</p>
+                    <p>Vestimenta formal. No utilizar tonos rosas, ni blanco en prendas de torso.</p>
                 </div>
             </div>
         </div>
